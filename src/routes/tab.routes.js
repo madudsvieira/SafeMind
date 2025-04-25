@@ -10,12 +10,13 @@ const Tab = createBottomTabNavigator();
 
 export default function TabRoutes(){
     return (
-        <Tab.Navigator>
+        <Tab.Navigator
+ >
             <Tab.Screen name="Home" component={Home} />
-            <Tab.Screen name="Developers" component={Devs} />
-            <Tab.Screen name="Apoio" component={Apoio} />
             <Tab.Screen name="Exercícios" component={Exercicios} />
+            <Tab.Screen name="Apoio" component={Apoio} />            
             <Tab.Screen name="Feedback" component={Feedback} />
+            <Tab.Screen name="Developers" component={Devs} />
         </Tab.Navigator>
     );
 }
