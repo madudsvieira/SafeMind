@@ -65,7 +65,7 @@ export default function Exercicios() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#D6F0F2",
+    backgroundColor: "#EDE9FE",
     alignItems: "center",
     justifyContent: "center",
     padding: 20,
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
     fontSize: 26,
     fontWeight: "bold",
     marginBottom: 10,
-    color: "#2E4A62",
+    color: "black",
   },
   image: {
     width: 120,
@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   timerButton: {
-    backgroundColor: "#5DA9E9",
+    backgroundColor: "#9C60BCFF",
     padding: 15,
     borderRadius: 10,
     marginBottom: 30,

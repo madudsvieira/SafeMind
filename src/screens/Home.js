@@ -26,10 +26,9 @@ export default function Home() {
 
   return (
     <View style={styles.container}>
-      {/* Imagem 1 - Banner ou fundo */}
-      {/* <Image source={require("../assets/fundoHome.png")} style={styles.imageTop} /> */}
-
-      {/* Frase motivacional */}
+    
+      <Image source={require("../assets/background.png")} style={styles.imageTop} />
+     
       <View style={styles.quoteContainer}>
         {loading ? (
           <ActivityIndicator size="large" color="#6B46C1" />
@@ -37,14 +36,12 @@ export default function Home() {
           <Text style={styles.quote}>{quote}</Text>
         )}
       </View>
-
-      {/* Widget de tempo meditado */}
+      
       <View style={styles.timerBox}>
         <Text style={styles.timerLabel}>Tempo Meditado:</Text>
         <Text style={styles.timerValue}>12 min</Text>
       </View>
 
-      {/* Botão para Exercícios */}
       <TouchableOpacity
         style={styles.button}
         onPress={() => navigation.navigate("Exercicios")}
@@ -62,7 +59,7 @@ const styles = StyleSheet.create({
   container: {
     padding: 20,
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#EDE9FE",
     alignItems: "center",
     justifyContent: "space-around",
   },
@@ -74,25 +71,26 @@ const styles = StyleSheet.create({
   },
   quoteContainer: {
     padding: 20,
-    backgroundColor: "#EDE7F6",
+    backgroundColor: "#C7ADF0FF",
     borderRadius: 12,
     marginVertical: 10,
   },
   quote: {
     fontSize: 16,
-    fontStyle: "italic",
+    fontStyle: "bold",
     textAlign: "center",
     color: "#6B46C1",
   },
   timerBox: {
-    backgroundColor: "#F3E8FF",
+    backgroundColor: "#C7ADF0FF",
     padding: 15,
     borderRadius: 12,
     alignItems: "center",
     width: "70%",
   },
   timerLabel: {
-    fontSize: 16,
+    fontSize: 20,
+    fontWeight: "bold",
     color: "#333",
   },
   timerValue: {

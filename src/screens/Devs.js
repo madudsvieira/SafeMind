@@ -5,6 +5,8 @@ export default function Devs() {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <Text style={styles.title}>Desenvolvedores do Projeto</Text>
+         
+
 
       <View style={styles.card}>
         <Image source={require("../assets/duda.png")} style={styles.image} />
@@ -30,6 +32,7 @@ export default function Devs() {
 const styles = StyleSheet.create({
     container: {
       alignItems: "center",
+      marginTop:25,
       padding: 20,
       backgroundColor: "#F8F4FF",
     },
@@ -37,7 +40,8 @@ const styles = StyleSheet.create({
       fontSize: 20,
       fontWeight: "bold",
       marginBottom: 20,
-      color: "#6B46C1",
+      marginTop:25,
+      color: "black",
     },
     card: {
       flexDirection: "row",
@@ -45,7 +49,7 @@ const styles = StyleSheet.create({
       backgroundColor: "#EDE9FE",
       padding: 15,
       borderRadius: 12,
-      width: "90%",
+      width: "100%",
       marginBottom: 15,
       shadowColor: "#000",
       shadowOffset: { width: 0, height: 2 },

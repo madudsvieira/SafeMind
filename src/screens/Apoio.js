@@ -49,15 +49,15 @@ const Apoio = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f0f0f0', 
+    backgroundColor: "#EDE9FE", 
   },
   header: {
-    backgroundColor: '#4a90e2', 
+    backgroundColor: '#C173DEFF', 
     paddingVertical: 30,
     alignItems: 'center',
     justifyContent: 'center',
     borderBottomWidth: 3,
-    borderBottomColor: '#3a7fb3', 
+    borderBottomColor: '#C173DEFF', 
   },
   headerText: {
     color: 'white',
@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginBottom: 20,
     borderWidth: 2,
-    borderColor: '#4a90e2', 
+    borderColor: '#B96BD5FF', 
   },
   footerText: {
     textAlign: 'center',
