@@ -1,8 +1,5 @@
 import React from 'react';
-import { View, Text, Button, Linking, ScrollView, StyleSheet, Image } from 'react-native';
-
-
-const supportIcon = 'https://pt.dreamstime.com/fotos-de-stock-royalty-free-pode-voc%C3%AA-ajudar-o-argumento-para-o-apoio-volunt%C3%A1rio-financeiro-image31864898';
+import { Button, Image, Linking, ScrollView, StyleSheet, Text, View } from 'react-native';
 
 
 const openHelpLink = (url) => {
@@ -16,7 +13,7 @@ const Apoio = () => {
         <Text style={styles.headerText}>Apoio Emocional</Text>
       </View>
 
-      
+
       <ScrollView style={styles.scrollContainer}>
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Informações sobre Saúde Mental</Text>
@@ -25,7 +22,7 @@ const Apoio = () => {
           </Text>
         </View>
 
-        
+
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Contatos de Emergência</Text>
           <Text style={styles.infoText}>📞 <Text style={styles.boldText}>CVV - Centro de Valorização da Vida</Text>: 188 (disponível 24h)</Text>
@@ -35,7 +32,7 @@ const Apoio = () => {
 
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Precisa de Ajuda?</Text>
-          <Image source={{ uri: supportIcon }} style={styles.supportIcon} />
+          <Image source={require('../assets/icon.png')} style={styles.supportIcon} />
           <Text style={styles.infoText}>Se você precisar de apoio emocional ou mais informações, clique no link abaixo:</Text>
           <Button title="Abrir Site de Ajuda" onPress={() => openHelpLink('https://www.cvv.org.br/')} color="#4a90e2" />
         </View>
@@ -49,15 +46,15 @@ const Apoio = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#EDE9FE", 
+    backgroundColor: "#EDE9FE",
   },
   header: {
-    backgroundColor: '#C173DEFF', 
+    backgroundColor: '#C173DEFF',
     paddingVertical: 30,
     alignItems: 'center',
     justifyContent: 'center',
     borderBottomWidth: 3,
-    borderBottomColor: '#C173DEFF', 
+    borderBottomColor: '#C173DEFF',
   },
   headerText: {
     color: 'white',
@@ -71,10 +68,10 @@ const styles = StyleSheet.create({
   },
   section: {
     marginVertical: 25,
-    backgroundColor: '#ffffff', 
+    backgroundColor: '#ffffff',
     borderRadius: 10,
     padding: 20,
-    shadowColor: '#000', 
+    shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
     shadowRadius: 5,
@@ -102,7 +99,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginBottom: 20,
     borderWidth: 2,
-    borderColor: '#B96BD5FF', 
+    borderColor: '#0D0C0DFF',
   },
   footerText: {
     textAlign: 'center',

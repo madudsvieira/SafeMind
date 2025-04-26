@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { View, Text, StyleSheet, ActivityIndicator, Image, TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
+import React, { useEffect, useState } from "react";
+import { ActivityIndicator, Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 export default function Home() {
   const [quote, setQuote] = useState("");
@@ -26,9 +26,9 @@ export default function Home() {
 
   return (
     <View style={styles.container}>
-    
+
       <Image source={require("../assets/background.png")} style={styles.imageTop} />
-     
+
       <View style={styles.quoteContainer}>
         {loading ? (
           <ActivityIndicator size="large" color="#6B46C1" />
@@ -36,7 +36,7 @@ export default function Home() {
           <Text style={styles.quote}>{quote}</Text>
         )}
       </View>
-      
+
       <View style={styles.timerBox}>
         <Text style={styles.timerLabel}>Tempo Meditado:</Text>
         <Text style={styles.timerValue}>12 min</Text>
@@ -48,8 +48,6 @@ export default function Home() {
       >
         <Text style={styles.buttonText}>Ir para Exercícios</Text>
       </TouchableOpacity>
-
-      {/* Imagem 2 - Ilustração extra */}
       {/* <Image source={require("../assets/calma.png")} style={styles.imageBottom} /> */}
     </View>
   );
